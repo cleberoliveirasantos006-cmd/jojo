@@ -1,0 +1,136 @@
+/*sheets da primeira pagina*/
+
+.conteiner {
+    color: black;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 15px;
+}
+
+.section {
+    border: 3px solid black;
+    width: 500px;
+    height: 300px;
+    margin: 15px;
+    background-color: whitesmoke;
+}
+
+body {
+    align-content: center;
+    text-align: center;
+    font-family: "Yuji Mai";
+    
+    background-image: url('imagem4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+img {
+    width: 150px;
+    height: auto;
+}
+
+.alterar-imagem-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: whitesmoke;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1000;
+}
+
+.alterar-texto-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: whitesmoke;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1000;
+}
+
+.alterar-tema-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: whitesmoke;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1000;
+}
+
+/*coisas para o alterador de tema*/
+
+.tema-claro {
+    background-color: white;
+    color: black;
+}
+
+.tema-escuro {
+    color: #f4f4f4;
+    background-image: none;
+    background-image: url('dark-tema-img.png.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+.tema-escuro .conteiner, .tema-escuro body {
+    /*bagulho em branco porque eu nao precisso mudar a cor do fundo*/
+}
+
+.tema-escuro .section {
+    background-color: rgb(76, 76, 76);
+    border: 3px solid whitesmoke;
+    z-index: 3;
+}
+
+.tema-escuro h1, .tema-escuro h2, .tema-escuro p, .tema-escuro span {
+    color: #ffffff;
+}
+
+
+
+/*Barra de progresso*/
+
+#barra-progresso {
+    width: 95%;
+    height: 25px;
+    background-color: #e0e0e0e0;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: 10px;
+    overflow: hidden;
+    margin-left: 2%;
+}
+
+#progresso-atual {
+    height: 100%;
+    width: 0%;
+    background-color: yellow;
+    transition: width 0.5s ease;
+}
+
+
+/*botoes no geral*/
+
+button {
+      cursor: pointer; /* Define o cursor para uma mãozinha quando o mouse está sobre ele */
+}
